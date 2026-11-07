@@ -1,0 +1,793 @@
+* {
+    margin: 0;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+header .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/images/hero.jpeg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+header .darklayer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(1deg,
+            rgba(0, 0, 0, 0.8500) 10.00%,
+            rgba(0, 0, 0, 0.8465) 17.25%,
+            rgba(0, 0, 0, 0.8361) 24.50%,
+            rgba(0, 0, 0, 0.8187) 31.75%,
+            rgba(0, 0, 0, 0.7400) 39.00%,
+            rgba(0, 0, 0, 0.7000) 46.25%,
+            rgba(0, 0, 0, 0.6500) 53.50%,
+            rgba(0, 0, 0, 0.6000) 60.75%,
+            rgba(0, 0, 0, 0.5800) 68.00%,
+            rgba(0, 0, 0, 0.5800) 75.25%,
+            rgba(0, 0, 0, 0.7600) 82.50%,
+            rgba(0, 0, 0, 0.8600) 89.75%,
+            rgba(0, 0, 0, 0.9200) 97.00%);
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    width: 80vw;
+    margin: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+header nav img {
+    width: 166px;
+}
+
+header nav .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+header nav .right button,
+footer .footer .btn button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 14px;
+    background-color: transparent;
+    border: 1px solid rgb(255 255 255 / 35%);
+    padding: 8px 18px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+header nav .right button img,
+footer .footer .btn button img {
+    width: 20px;
+}
+
+header nav .right button .down-arrow,
+footer .footer .btn button .down-arrow {
+    width: 8.5px;
+    margin-left: 4px;
+}
+
+header nav .right a,
+header .hero form button,
+main .membership form button{
+    font-weight: bold;
+    color: white;
+    padding: 9px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: rgb(229, 9, 20);
+
+}
+
+header nav .right a:hover,
+header .hero form button:hover,
+main .membership form button:hover{
+    background-color: rgb(193, 17, 25);
+
+}
+
+header nav .right a:focus,
+header .hero form button:focus,
+main .membership form button:focus {
+    background-color: rgb(153, 22, 29);
+}
+
+/* hero  */
+header .hero {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    gap: 22px;
+    margin: 4rem 1rem 1rem 1rem;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    max-width: 696px;
+}
+
+header .hero .first {
+    font-size: 56px;
+    font-weight: 900;
+}
+
+header .hero .second {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header .hero .para {
+    font-size: 16px;
+    margin-top: 1rem;
+    font-weight: lighter;
+}
+
+header .hero form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+header .hero form input,
+main .membership form input{
+    font-size: 16px;
+    background-color: transparent;
+    border-bottom: none;
+    border-right: none;
+    border: .5px solid rgba(255, 255, 255, 0.365);
+    border-radius: 4px;
+    padding: 12px 18px;
+    width: 50%;
+    height: 30px;
+    color: white;
+}
+
+header .hero form input::placeholder {
+    color: rgba(231, 231, 231, 0.877);
+    font-size: 18px;
+}
+
+
+header .hero form button,
+main .membership form button{
+    border: none;
+    font-size: 22px;
+    display: inline-flex;
+    padding: 16px 18px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* hero section  */
+@media screen and (min-width: 1920px) {
+
+    header .darklayer,
+    header .container {
+        height: 70vh;
+    }
+
+    header nav {
+        width: 65vw;
+    }
+
+    header .hero {
+        max-width: 746px;
+    }
+
+    header nav img {
+        width: 190px;
+    }
+
+    header nav .right button img {
+        width: 22px;
+    }
+
+    header nav .right button .down-arrow {
+        width: 10.5px;
+    }
+
+    header nav .right button {
+        font-size: 16px;
+    }
+
+    header nav .right a {
+        font-size: 20px;
+    }
+
+    header .hero .first {
+        font-size: 64px;
+    }
+
+    header .hero .second {
+        font-size: 24px;
+    }
+
+    header .hero .para {
+        font-size: 18px;
+    }
+
+    header .hero form input {
+        width: 55%;
+        height: 40px;
+    }
+
+    header .hero form button {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    header .darklayer,
+    header .container {
+        height: 70vh;
+    }
+
+    header nav {
+        width: 90vw;
+    }
+
+    header nav img {
+        width: 156px;
+    }
+
+    header .hero .first {
+        font-size: 46px;
+    }
+
+    header .hero .second {
+        font-size: 16px;
+    }
+
+    header .hero .para {
+        font-size: 14px;
+    }
+
+    header .hero form input {
+        width: 45%;
+    }
+
+    header .hero form button {
+        font-size: 20px;
+    }
+
+    header nav .right button img {
+        width: 18px;
+    }
+
+
+    header nav .right button .down-arrow {
+        width: 8px;
+    }
+
+    header nav .right button {
+        font-size: 13px;
+    }
+
+    header nav .right a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    header .darklayer,
+    header .container {
+        height: 70vh;
+    }
+
+    header .hero {
+        max-width: 568px;
+        gap: 12px;
+    }
+
+    header nav {
+        width: 90vw;
+    }
+
+    header nav img {
+        width: 140px;
+    }
+
+    header .hero .first {
+        font-size: 36px;
+    }
+
+    header .hero .second {
+        font-size: 14px;
+    }
+
+    header .hero .para {
+        font-size: 12px;
+    }
+
+    header .hero form input {
+        width: 40%;
+        height: 24px;
+    }
+
+    header .hero form input::placeholder {
+        font-size: 14px;
+    }
+
+    header .hero form button {
+        font-size: 16px;
+        padding: 12px 18px;
+    }
+
+    header nav .right button img {
+        width: 16px;
+    }
+
+
+    header nav .right button .down-arrow {
+        width: 8px;
+    }
+
+    header nav .right button {
+        font-size: 12px;
+    }
+
+    header nav .right a {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header nav img {
+        width: 120px;
+    }
+
+    header nav .right button img {
+        width: 14px;
+    }
+
+
+    header nav .right button .down-arrow {
+        width: 7px;
+    }
+
+    header nav .right button {
+        font-size: 12px;
+    }
+
+    header nav .right a {
+        font-size: 12px;
+    }
+
+
+    header .hero form {
+        flex-direction: column;
+
+    }
+
+    header .hero form input {
+        width: 70%;
+        height: 22px;
+    }
+
+    header .hero form button {
+        padding: 12px 20px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    header .hero {
+        max-width: 568px;
+        gap: 12px;
+    }
+
+    header nav {
+        width: 100vw;
+        padding: 1rem 1.2rem;
+    }
+
+    header nav img {
+        width: 90px;
+    }
+
+    header nav .right {
+        gap: 10px;
+    }
+
+    header nav .right button img {
+        width: 11px;
+    }
+
+    header nav .right button .down-arrow {
+        width: 6px;
+    }
+
+    header nav .right button {
+        font-size: 11px;
+    }
+
+    header nav .right a {
+        font-size: 10px;
+    }
+
+    header .hero .first {
+        font-size: 32px;
+    }
+
+    header .hero .second {
+        font-size: 14px;
+    }
+
+    header .hero .para {
+        font-size: 12px;
+    }
+
+    header .hero form input {
+        width: 70%;
+        height: 20px;
+    }
+
+    header .hero form input::placeholder {
+        font-size: 12px;
+    }
+
+    header .hero form button {
+        padding: 10px 20px;
+    }
+
+    header .hero form button {
+        font-size: 14px;
+    }
+
+    header .hero form button img {
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+
+    header .darklayer,
+    header .container {
+        height: 90vh;
+    }
+
+    header nav .right button {
+        font-size: 10px;
+    }
+
+    header .hero .first {
+        font-size: 28px;
+    }
+
+    header .hero .second {
+        font-size: 12px;
+    }
+
+    header .hero form input {
+        height: 12px;
+    }
+
+    header .hero form button {
+        font-size: 13px;
+    }
+
+    header .hero form button {
+        padding: 8px 20px;
+    }
+}
+
+hr {
+    border: none;
+    height: 6px;
+    background-image: linear-gradient(40deg, transparent, #560408, transparent);
+}
+
+/* Main  */
+
+main .section,
+footer {
+    max-width: 75vw;
+    color: white;
+    margin: auto;
+}
+
+main .trendingSec {
+    padding: 3rem 0;
+}
+
+main .trendingSec h1 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+main .trendingSec .movies {
+    padding: 0 1.5rem;
+    overflow-x: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: end;
+    gap: 2.5rem;
+    padding-bottom: 12px;
+
+    &::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #141414;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #414141;
+        border-radius: 10px;
+        transition: background 0.2s ease;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #2f2f2f;
+        cursor: pointer;
+    }
+}
+
+/* 2. STANDARD FALLBACK FOR FIREFOX */
+@supports not selector(::-webkit-scrollbar) {
+    main .trendingSec .movies {
+        /* thumb color (red) | track color (black) */
+        scrollbar-color: #E50914 #141414;
+        scrollbar-width: thin;
+    }
+}
+
+
+main .trendingSec .movies .movie {
+    position: relative;
+    margin-top: 1rem;
+    border-radius: 10px;
+    width: 12rem;
+    height: 17rem;
+    cursor: pointer;
+    background-image: url(../assets/images/trendingSec/gajabRaat.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main .trendingSec .movies .movie2 {
+    background-image: url(../assets/images/trendingSec/lupin.webp);
+}
+
+main .trendingSec .movies .movie3 {
+    background-image: url(../assets/images/trendingSec/tgikShow.webp);
+}
+
+main .trendingSec .movies .movie4 {
+    background-image: url(../assets/images/trendingSec/diwali.webp);
+}
+
+main .trendingSec .movies .movie5 {
+    background-image: url(../assets/images/trendingSec/deadEndJob.webp);
+}
+
+
+main .trendingSec .movies .movie .number {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left: -16px;
+    margin: 1rem 0;
+}
+
+main .trendingSec .movies .movie .number span {
+    font-size: 6rem;
+    color: rgba(0, 0, 0, 0.8);
+    -webkit-text-stroke: 4px #ffffffe0;
+    font-family: fantasy;
+    paint-order: stroke fill;
+}
+
+/* Enjoy Secion  */
+main .partitionSec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+main .partitionSec .left {
+    max-width: 100%;
+}
+
+main .partitionSec .left h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+main .partitionSec .left span {
+    font-size: 1.1rem;
+}
+
+main .enjoySec .right .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .enjoySec .right .box img {
+    width: 350px;
+    position: relative;
+    z-index: 1;
+}
+
+main .enjoySec .right video {
+    position: absolute;
+    width: 272px;
+}
+
+/* Download Section  */
+main .order .left {
+    order: 2;
+}
+
+main .order .right {
+    order: 1;
+}
+
+main .downloadSec,
+main .kidsSec {
+    padding: 2rem 0;
+}
+
+main .downloadSec .right img {
+    width: 350px;
+}
+
+
+/* Watch Section  */
+main .watchSec .right .box,
+main .membership form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .watchSec .right .box img {
+    width: 350px;
+    position: relative;
+    z-index: 1;
+}
+
+main .watchSec .right video {
+    position: absolute;
+    width: 272px;
+}
+
+/* kidsSec  */
+main .kidsSec .right img{
+    width: 350px;
+}
+
+
+/* Faq section */
+
+main .faqSec {
+    padding: 4rem 0;
+}
+
+main .faqSec .header {
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+}
+
+main .faqSec .questions .query {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.5rem;
+    padding: 2rem;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    border-radius: 4px;
+    color: white;
+    margin-bottom: .5rem;
+    cursor: pointer;
+    background-color: #2d2d2d;
+    transition: all .3s ease-in-out;
+}
+
+main .faqSec .questions .query:hover {
+    background-color: #414141;
+}
+
+/* Membership section  */
+
+.text-center{
+    text-align: center;
+}
+
+main .membership{
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+main .membership p{
+    margin-bottom: 1.2rem;
+}
+
+main .membership form{
+    gap: 12px;
+}
+
+
+/* footer */
+footer{
+    padding: 2rem 0;
+}
+
+footer .contact span{
+    font-size: 1.1rem;
+}
+
+footer a,
+footer .footer .np{
+    color: #b3b3b3;
+}
+
+footer .links{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin: 2.5rem 0;
+}
+
+footer .footer .container{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+footer .footer{
+    padding: 1rem 0;
+    margin: 3rem 0;
+}
+
+footer .footer .btn button{
+    font-size: 16px;
+}
+
+footer .footer .para{
+    font-size: .9rem;
+    color: #808080;
+}
