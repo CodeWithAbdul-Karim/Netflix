@@ -97,7 +97,7 @@ footer .footer .btn button .down-arrow {
 
 header nav .right a,
 header .hero form button,
-main .membership form button{
+main .membership form button {
     font-weight: bold;
     color: white;
     padding: 9px 18px;
@@ -109,7 +109,7 @@ main .membership form button{
 
 header nav .right a:hover,
 header .hero form button:hover,
-main .membership form button:hover{
+main .membership form button:hover {
     background-color: rgb(193, 17, 25);
 
 }
@@ -158,7 +158,7 @@ header .hero form {
 }
 
 header .hero form input,
-main .membership form input{
+main .membership form input {
     font-size: 16px;
     background-color: transparent;
     border-bottom: none;
@@ -178,7 +178,7 @@ header .hero form input::placeholder {
 
 
 header .hero form button,
-main .membership form button{
+main .membership form button {
     border: none;
     font-size: 22px;
     display: inline-flex;
@@ -188,7 +188,286 @@ main .membership form button{
     cursor: pointer;
 }
 
-/* hero section  */
+hr {
+    border: none;
+    height: 6px;
+    background-image: linear-gradient(40deg, transparent, #560408, transparent);
+}
+
+/* Main  */
+
+main .section,
+footer {
+    width: 75vw;
+    box-sizing: border-box;
+    color: white;
+    margin: auto;
+}
+
+main .trendingSec {
+    padding: 3rem 1.2rem;
+}
+
+main .trendingSec h1 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+main .trendingSec .movies {
+    padding: 0 1.5rem;
+    overflow-x: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: end;
+    gap: 2.5rem;
+    padding-bottom: 12px;
+
+    &::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #141414;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #414141;
+        border-radius: 10px;
+        transition: background 0.2s ease;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #2f2f2f;
+        cursor: pointer;
+    }
+}
+
+/* 2. STANDARD FALLBACK FOR FIREFOX */
+@supports not selector(::-webkit-scrollbar) {
+    main .trendingSec .movies {
+        /* thumb color (red) | track color (black) */
+        scrollbar-color: #E50914 #141414;
+        scrollbar-width: thin;
+    }
+}
+
+
+main .trendingSec .movies .movie {
+    position: relative;
+    margin-top: 1rem;
+    border-radius: 10px;
+    width: 12rem;
+    height: 17rem;
+    cursor: pointer;
+    background-image: url(../assets/images/trendingSec/gajabRaat.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main .trendingSec .movies .movie2 {
+    background-image: url(../assets/images/trendingSec/lupin.webp);
+}
+
+main .trendingSec .movies .movie3 {
+    background-image: url(../assets/images/trendingSec/tgikShow.webp);
+}
+
+main .trendingSec .movies .movie4 {
+    background-image: url(../assets/images/trendingSec/diwali.webp);
+}
+
+main .trendingSec .movies .movie5 {
+    background-image: url(../assets/images/trendingSec/deadEndJob.webp);
+}
+
+
+main .trendingSec .movies .movie .number {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left: -16px;
+    margin: 1rem 0;
+}
+
+main .trendingSec .movies .movie .number span {
+    font-size: 6rem;
+    color: rgba(0, 0, 0, 0.8);
+    -webkit-text-stroke: 4px #ffffffe0;
+    font-family: fantasy;
+    paint-order: stroke fill;
+}
+
+/* Enjoy Secion  */
+main .partitionSec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 12px;
+}
+
+main .partitionSec .left {
+    min-width: 70%;
+}
+
+main .partitionSec .right {
+    min-width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .partitionSec .right img {
+    position: relative;
+    z-index: 1;
+    width: 350px;
+}
+
+main .partitionSec .left h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+main .partitionSec .left span {
+    font-size: 1.1rem;
+}
+
+main .enjoySec .right video {
+    position: absolute;
+    width: 272px;
+}
+
+/* Download Section  */
+main .order .left {
+    order: 2;
+}
+
+main .order .right {
+    order: 1;
+}
+
+main .downloadSec,
+main .kidsSec {
+    padding: 2rem 0;
+}
+
+
+/* Watch Section  */
+main .membership form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main .watchSec .right video {
+    position: absolute;
+    width: 272px;
+}
+
+
+/* Faq section */
+
+main .faqSec {
+    padding: 4rem 0;
+}
+
+main .faqSec .header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.4rem;
+}
+
+main .faqSec .questions .query {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.5rem;
+    padding: 2rem;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    border-radius: 4px;
+    color: white;
+    margin-bottom: .5rem;
+    cursor: pointer;
+    background-color: #2d2d2d;
+    transition: all .3s ease-in-out;
+}
+
+main .faqSec .questions .query:hover {
+    background-color: #414141;
+}
+
+/* Membership section  */
+
+.text-center {
+    text-align: center;
+}
+
+main .membership {
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+main .membership p {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+}
+
+main .membership form {
+    gap: 12px;
+}
+
+
+/* footer */
+footer {
+    padding: 2rem 0;
+}
+
+footer .contact span {
+    font-size: 1.1rem;
+}
+
+footer a,
+footer .footer .np {
+    color: #b3b3b3;
+}
+
+footer .links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin: 2.5rem 0;
+}
+
+footer .footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+footer .footer {
+    padding: 1rem 0;
+    margin: 3rem 0;
+}
+
+footer .footer .btn button {
+    font-size: 16px;
+}
+
+footer .footer .para {
+    font-size: .9rem;
+    color: #808080;
+}
+
+
+
+/* Media Queries */
 @media screen and (min-width: 1920px) {
 
     header .darklayer,
@@ -404,6 +683,7 @@ main .membership form button{
 
 @media screen and (max-width: 480px) {
 
+    /* header  */
     header .hero {
         max-width: 568px;
         gap: 12px;
@@ -446,8 +726,9 @@ main .membership form button{
         font-size: 14px;
     }
 
-    header .hero .para {
-        font-size: 12px;
+    header .hero .para,
+    main .membership p {
+        font-size: 13px;
     }
 
     header .hero form input {
@@ -470,6 +751,163 @@ main .membership form button{
     header .hero form button img {
         width: 20px;
     }
+
+    /* main  */
+
+    main .section,
+    footer {
+        width: 100vw;
+    }
+
+    /* trending section  */
+
+    main .trendingSec h1 {
+        font-size: 1.1rem;
+    }
+
+    main .trendingSec .movies {
+        padding: 0 1rem;
+    }
+
+    main .trendingSec .movies .movie {
+        width: 7rem;
+        height: 10rem;
+    }
+
+    main .trendingSec .movies .movie .number {
+        left: -12px;
+    }
+
+    main .trendingSec .movies .movie .number span {
+        font-size: 3rem;
+    }
+
+    /* Enjoy sec */
+    main .partitionSec .right img {
+        width: 200px;
+    }
+
+    main .partitionSec .left {
+        width: 100%;
+    }
+
+    main .partitionSec .left h2 {
+        font-size: 18px;
+        margin-bottom: .5rem;
+    }
+
+
+    main .partitionSec .left span {
+        font-size: 13px;
+    }
+
+    main .enjoySec .right video {
+        position: absolute;
+        width: 200px;
+    }
+
+    /* download sec  */
+    main .downloadSec,
+    main .kidsSec {
+        margin-bottom: 2rem;
+    }
+
+    main .downloadSec .left {
+        margin-top: 1rem;
+    }
+
+    main .downloadSec,
+    main .kidsSec {
+        padding: 0rem 0;
+    }
+
+    /* Watch Sec */
+
+    main .watchSec .right video {
+        width: 200px;
+    }
+
+    /* Faq Sec  */
+    main .faqSec {
+        padding: 1rem 0;
+    }
+
+    main .faqSec .header h2 {
+        font-size: 18px;
+    }
+
+    main .faqSec .questions .query {
+        font-size: 13px;
+        padding: 1rem;
+    }
+
+    main .faqSec .questions .query svg {
+        width: 16px;
+    }
+
+    /* MemberShip Sec */
+    main .membership form input {
+        font-size: 13px;
+        width: 100%;
+        height: 16px;
+    }
+
+    main .membership form button {
+        font-size: 13px;
+        padding: 8px 20px;
+    }
+
+    main .membership form button img {
+        width: 20px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 0 1.2rem;
+    }
+
+    footer .contact span,
+    footer .footer .btn button {
+        font-size: 13px;
+    }
+
+    footer .links {
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 12px;
+    }
+
+    footer .footer .btn button img {
+        width: 14px;
+    }
+
+    footer .footer .btn button .down-arrow {
+        width: 8px;
+    }
+
+    footer .footer {
+        padding: 1rem 0;
+        margin: 2rem 0;
+    }
+
+    footer .footer .np span {
+        font-size: 13px;
+    }
+
+    footer .footer .para span {
+        font-size: 13px;
+    }
+
+    main .partitionSec,
+    main .faqSec {
+        margin: 2.5rem 0;
+        gap: 16px;
+    }
+
+    main .section {
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 376px) {
@@ -488,7 +926,7 @@ main .membership form button{
     }
 
     header .hero .second {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     header .hero form input {
@@ -497,297 +935,12 @@ main .membership form button{
 
     header .hero form button {
         font-size: 13px;
-    }
-
-    header .hero form button {
         padding: 8px 20px;
     }
 }
 
-hr {
-    border: none;
-    height: 6px;
-    background-image: linear-gradient(40deg, transparent, #560408, transparent);
-}
-
-/* Main  */
-
-main .section,
-footer {
-    max-width: 75vw;
-    color: white;
-    margin: auto;
-}
-
-main .trendingSec {
-    padding: 3rem 0;
-}
-
-main .trendingSec h1 {
-    font-size: 1.7rem;
-    margin-bottom: 1rem;
-}
-
-main .trendingSec .movies {
-    padding: 0 1.5rem;
-    overflow-x: auto;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-items: end;
-    gap: 2.5rem;
-    padding-bottom: 12px;
-
-    &::-webkit-scrollbar {
-        height: 6px;
+@media screen and (max-width: 320px) {
+    footer .links {
+        grid-template-columns: 1fr;
     }
-
-    &::-webkit-scrollbar-track {
-        background: #141414;
-        border-radius: 10px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-        background: #414141;
-        border-radius: 10px;
-        transition: background 0.2s ease;
-    }
-
-    &::-webkit-scrollbar-thumb:hover {
-        background: #2f2f2f;
-        cursor: pointer;
-    }
-}
-
-/* 2. STANDARD FALLBACK FOR FIREFOX */
-@supports not selector(::-webkit-scrollbar) {
-    main .trendingSec .movies {
-        /* thumb color (red) | track color (black) */
-        scrollbar-color: #E50914 #141414;
-        scrollbar-width: thin;
-    }
-}
-
-
-main .trendingSec .movies .movie {
-    position: relative;
-    margin-top: 1rem;
-    border-radius: 10px;
-    width: 12rem;
-    height: 17rem;
-    cursor: pointer;
-    background-image: url(../assets/images/trendingSec/gajabRaat.webp);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-main .trendingSec .movies .movie2 {
-    background-image: url(../assets/images/trendingSec/lupin.webp);
-}
-
-main .trendingSec .movies .movie3 {
-    background-image: url(../assets/images/trendingSec/tgikShow.webp);
-}
-
-main .trendingSec .movies .movie4 {
-    background-image: url(../assets/images/trendingSec/diwali.webp);
-}
-
-main .trendingSec .movies .movie5 {
-    background-image: url(../assets/images/trendingSec/deadEndJob.webp);
-}
-
-
-main .trendingSec .movies .movie .number {
-    position: absolute;
-    z-index: 10;
-    bottom: 0;
-    left: -16px;
-    margin: 1rem 0;
-}
-
-main .trendingSec .movies .movie .number span {
-    font-size: 6rem;
-    color: rgba(0, 0, 0, 0.8);
-    -webkit-text-stroke: 4px #ffffffe0;
-    font-family: fantasy;
-    paint-order: stroke fill;
-}
-
-/* Enjoy Secion  */
-main .partitionSec {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-}
-
-main .partitionSec .left {
-    max-width: 100%;
-}
-
-main .partitionSec .left h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-main .partitionSec .left span {
-    font-size: 1.1rem;
-}
-
-main .enjoySec .right .box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-main .enjoySec .right .box img {
-    width: 350px;
-    position: relative;
-    z-index: 1;
-}
-
-main .enjoySec .right video {
-    position: absolute;
-    width: 272px;
-}
-
-/* Download Section  */
-main .order .left {
-    order: 2;
-}
-
-main .order .right {
-    order: 1;
-}
-
-main .downloadSec,
-main .kidsSec {
-    padding: 2rem 0;
-}
-
-main .downloadSec .right img {
-    width: 350px;
-}
-
-
-/* Watch Section  */
-main .watchSec .right .box,
-main .membership form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-main .watchSec .right .box img {
-    width: 350px;
-    position: relative;
-    z-index: 1;
-}
-
-main .watchSec .right video {
-    position: absolute;
-    width: 272px;
-}
-
-/* kidsSec  */
-main .kidsSec .right img{
-    width: 350px;
-}
-
-
-/* Faq section */
-
-main .faqSec {
-    padding: 4rem 0;
-}
-
-main .faqSec .header {
-    margin-bottom: 1.2rem;
-    font-size: 1.2rem;
-}
-
-main .faqSec .questions .query {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px;
-    font-size: 1.5rem;
-    padding: 2rem;
-    border: none;
-    width: 100%;
-    text-align: left;
-    font-weight: bold;
-    border-radius: 4px;
-    color: white;
-    margin-bottom: .5rem;
-    cursor: pointer;
-    background-color: #2d2d2d;
-    transition: all .3s ease-in-out;
-}
-
-main .faqSec .questions .query:hover {
-    background-color: #414141;
-}
-
-/* Membership section  */
-
-.text-center{
-    text-align: center;
-}
-
-main .membership{
-    padding: 2.5rem;
-    margin-bottom: 2.5rem;
-}
-
-main .membership p{
-    margin-bottom: 1.2rem;
-}
-
-main .membership form{
-    gap: 12px;
-}
-
-
-/* footer */
-footer{
-    padding: 2rem 0;
-}
-
-footer .contact span{
-    font-size: 1.1rem;
-}
-
-footer a,
-footer .footer .np{
-    color: #b3b3b3;
-}
-
-footer .links{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
-    margin: 2.5rem 0;
-}
-
-footer .footer .container{
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-}
-
-footer .footer{
-    padding: 1rem 0;
-    margin: 3rem 0;
-}
-
-footer .footer .btn button{
-    font-size: 16px;
-}
-
-footer .footer .para{
-    font-size: .9rem;
-    color: #808080;
 }
