@@ -310,7 +310,8 @@ main .partitionSec {
 }
 
 main .partitionSec .left {
-    min-width: 70%;
+    position: relative;
+    z-index: 5;
 }
 
 main .partitionSec .right {
@@ -365,7 +366,7 @@ main .membership .form {
 
 main .watchSec .right video {
     position: absolute;
-    width: 272px;
+    width: 312px;
 }
 
 
@@ -511,16 +512,131 @@ footer .footer .para {
     }
 
     header .hero .para {
-        font-size: 18px;
+        font-size: 22px;
     }
 
     header .hero .form input {
         width: 55%;
-        height: 40px;
+        height: 45px;
+    }
+
+    header .hero .form input::placeholder {
+        font-size: 20px;
     }
 
     header .hero .form a {
+        font-size: 25px;
+        padding: 21px 22px;
+    }
+
+    header .hero .form a img {
+        width: 30px;
+    }
+
+    /* main  */
+    main .section,
+    footer {
+        width: 65vw;
+    }
+
+    /* trending Sec  */
+
+    main .trendingSec h1 {
+        font-size: 2.7rem;
+        margin-bottom: 1.5rem;
+    }
+
+    main .trendingSec .movies .movie {
+        width: 16rem;
+        height: 22rem;
+    }
+
+    main .trendingSec .movies .movie .number span {
+        font-size: 7rem;
+    }
+
+    main .trendingSec .movies .movie .number {
+        left: -20px;
+    }
+
+    main .partitionSec .left h2 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    main .partitionSec .left span {
+        font-size: 1.5rem;
+    }
+
+    /* Enjoy Sec */
+    main .partitionSec .right img {
+        width: 460px;
+    }
+
+    main .partitionSec .right video {
+        width: 406px;
+    }
+
+    /* faq sec  */
+    main .faqSec .header h2 {
+        font-size: 48px;
+        margin-bottom: 2rem;
+    }
+
+    main .faqSec .questions .query {
         font-size: 28px;
+    }
+
+    main .faqSec .questions .query svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    /* membership sec  */
+    main .membership p {
+        font-size: 24px;
+        margin-bottom: 2.2rem;
+    }
+
+    main .membership .form input {
+        font-size: 20px;
+        height: 40px;
+        width: 40%;
+    }
+
+    main .membership .form a {
+        font-size: 23px;
+        padding: 20px 22px;
+    }
+
+    /* footer  */
+    footer .contact span {
+        font-size: 23px;
+    }
+
+    footer .links {
+        font-size: 21px;
+    }
+
+    footer .footer .btn button {
+        font-size: 23px;
+        padding: 10px 22px;
+    }
+
+    footer .footer .btn button img {
+        width: 24px;
+    }
+
+    footer .footer .btn button .down-arrow {
+        width: 13.5px;
+    }
+
+    footer .footer .np {
+        font-size: 21px;
+    }
+
+    footer .footer .para {
+        font-size: 18px;
     }
 }
 
@@ -532,7 +648,7 @@ footer .footer .para {
     }
 
     header nav {
-        width: 90vw;
+        width: 95vw;
     }
 
     header nav img {
@@ -540,15 +656,15 @@ footer .footer .para {
     }
 
     header .hero .first {
-        font-size: 46px;
+        font-size: 48px;
     }
 
     header .hero .second {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     header .hero .para {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     header .hero .form input {
@@ -565,15 +681,190 @@ footer .footer .para {
 
 
     header nav .right button .down-arrow {
-        width: 8px;
+        width: 9px;
     }
 
     header nav .right button {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     header nav .right a {
-        font-size: 14px;
+        font-size: 16px;
+    }
+
+    /* main  */
+
+    main .section,
+    footer {
+        width: 100vw;
+    }
+
+    /* trending section  */
+
+    main .trendingSec h1 {
+        font-size: 24px;
+    }
+
+    main .trendingSec .movies {
+        padding: 0 1rem;
+    }
+
+    main .trendingSec .movies .movie {
+        width: 164px;
+        height: 230px;
+    }
+
+    main .trendingSec .movies .movie .number {
+        left: -12px;
+    }
+
+    main .trendingSec .movies .movie .number span {
+        font-size: 4rem;
+    }
+
+    /* Enjoy sec */
+    main .partitionSec .right img {
+        width: 300px;
+    }
+
+    main .partitionSec .left {
+        width: 100%;
+    }
+
+    main .partitionSec .left h2 {
+        font-size: 24px;
+        margin-bottom: 1rem;
+    }
+
+
+    main .partitionSec .left span {
+        font-size: 18px;
+    }
+
+    main .enjoySec .right video {
+        position: absolute;
+        width: 228px;
+    }
+
+    /* download sec  */
+    main .downloadSec,
+    main .kidsSec {
+        margin-bottom: 2rem;
+    }
+
+    main .downloadSec .left {
+        margin-top: 1rem;
+    }
+
+    main .downloadSec,
+    main .kidsSec {
+        padding: 0rem 0;
+    }
+
+    /* Watch Sec */
+
+    main .watchSec .right video {
+        width: 266px;
+    }
+
+    /* Faq Sec  */
+    main .faqSec {
+        padding: 1rem 0;
+    }
+
+    main .faqSec .header h2 {
+        font-size: 24px;
+    }
+
+    main .faqSec .questions .query {
+        font-size: 18px;
+        padding: 1rem;
+    }
+
+    main .faqSec .questions .query svg {
+        width: 18px;
+    }
+
+    /* MemberShip Sec */
+    main .membership p {
+        font-size: 18px;
+    }
+
+    main .membership .form {
+        width: fit-content;
+        justify-content: left;
+        gap: 16px;
+    }
+
+    main .membership .form input {
+        font-size: 17px;
+        width: 100%;
+        height: 19px;
+    }
+
+    main .membership .form a {
+        font-size: 16px;
+        padding: 14px 20px;
+    }
+
+    main .membership .form a img {
+        width: 20px;
+    }
+
+    .text-center {
+        text-align: left;
+    }
+
+    /* Footer */
+    footer {
+        padding: 0 1.4rem;
+    }
+
+    footer .contact span,
+    footer .footer .btn button {
+        font-size: 17px;
+    }
+
+    footer .links {
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 16px;
+    }
+
+    footer .footer .btn button img {
+        width: 16px;
+    }
+
+    footer .footer .btn button {
+        font-size: 16px;
+    }
+
+    footer .footer .btn button .down-arrow {
+        width: 9px;
+    }
+
+    footer .footer {
+        padding: 1rem 0;
+        margin: 2rem 0;
+    }
+
+    footer .footer .np span {
+        font-size: 16px;
+    }
+
+    footer .footer .para span {
+        font-size: 15px;
+    }
+
+    main .partitionSec,
+    main .faqSec {
+        margin: 2.5rem 0;
+        gap: 16px;
+    }
+
+    main .section {
+        padding-right: 1.4rem;
+        padding-left: 1.4rem;
+        flex-wrap: wrap;
     }
 }
 
@@ -586,11 +877,7 @@ footer .footer .para {
 
     header .hero {
         max-width: 568px;
-        gap: 12px;
-    }
-
-    header nav {
-        width: 90vw;
+        gap: 14px;
     }
 
     header nav img {
@@ -598,24 +885,21 @@ footer .footer .para {
     }
 
     header .hero .first {
-        font-size: 36px;
+        font-size: 40px;
     }
 
-    header .hero .second {
-        font-size: 14px;
-    }
-
+    header .hero .second,
     header .hero .para {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     header .hero .form input {
-        width: 40%;
+        width: 46%;
         height: 24px;
     }
 
     header .hero .form input::placeholder {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     header .hero .form a {
@@ -638,6 +922,181 @@ footer .footer .para {
 
     header nav .right a {
         font-size: 13px;
+    }
+
+    /* main  */
+
+    main .section,
+    footer {
+        width: 100vw;
+    }
+
+    /* trending section  */
+
+    main .trendingSec h1 {
+        font-size: 24px;
+    }
+
+    main .trendingSec .movies {
+        padding: 0 1rem;
+    }
+
+    main .trendingSec .movies .movie {
+        width: 164px;
+        height: 230px;
+    }
+
+    main .trendingSec .movies .movie .number {
+        left: -12px;
+    }
+
+    main .trendingSec .movies .movie .number span {
+        font-size: 4rem;
+    }
+
+    /* Enjoy sec */
+    main .partitionSec .right img {
+        width: 280px;
+    }
+
+    main .partitionSec .left {
+        width: 100%;
+    }
+
+    main .partitionSec .left h2 {
+        font-size: 24px;
+        margin-bottom: 1rem;
+    }
+
+
+    main .partitionSec .left span {
+        font-size: 18px;
+    }
+
+    main .enjoySec .right video {
+        position: absolute;
+        width: 222px;
+    }
+
+    /* download sec  */
+    main .downloadSec,
+    main .kidsSec {
+        margin-bottom: 2rem;
+    }
+
+    main .downloadSec .left {
+        margin-top: 1rem;
+    }
+
+    main .downloadSec,
+    main .kidsSec {
+        padding: 0rem 0;
+    }
+
+    /* Watch Sec */
+
+    main .watchSec .right video {
+        width: 246px;
+    }
+
+    /* Faq Sec  */
+    main .faqSec {
+        padding: 1rem 0;
+    }
+
+    main .faqSec .header h2 {
+        font-size: 24px;
+    }
+
+    main .faqSec .questions .query {
+        font-size: 18px;
+        padding: 1rem;
+    }
+
+    main .faqSec .questions .query svg {
+        width: 18px;
+    }
+
+    /* MemberShip Sec */
+    main .membership p {
+        font-size: 18px;
+    }
+
+    main .membership .form {
+        width: fit-content;
+        justify-content: left;
+        gap: 16px;
+    }
+
+    main .membership .form input {
+        font-size: 16px;
+        width: 100%;
+        height: 18px;
+    }
+
+    main .membership .form a {
+        font-size: 15px;
+        padding: 11px 20px;
+    }
+
+    main .membership .form a img {
+        width: 20px;
+    }
+
+    .text-center {
+        text-align: left;
+    }
+
+    /* Footer */
+    footer {
+        padding: 0 1.4rem;
+    }
+
+    footer .contact span,
+    footer .footer .btn button {
+        font-size: 16px;
+    }
+
+    footer .links {
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 15px;
+    }
+
+    footer .footer .btn button img {
+        width: 15px;
+    }
+
+    footer .footer .btn button {
+        font-size: 15px;
+    }
+
+    footer .footer .btn button .down-arrow {
+        width: 8px;
+    }
+
+    footer .footer {
+        padding: 1rem 0;
+        margin: 2rem 0;
+    }
+
+    footer .footer .np span {
+        font-size: 16px;
+    }
+
+    footer .footer .para span {
+        font-size: 15px;
+    }
+
+    main .partitionSec,
+    main .faqSec {
+        margin: 2.5rem 0;
+        gap: 16px;
+    }
+
+    main .section {
+        padding-right: 1.4rem;
+        padding-left: 1.4rem;
+        flex-wrap: wrap;
     }
 }
 
@@ -880,7 +1339,7 @@ footer .footer .para {
     }
 
     footer .links {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         font-size: 14px;
     }
 
@@ -949,10 +1408,5 @@ footer .footer .para {
         font-size: 13px;
         padding: 8px 20px;
     }
-}
 
-@media screen and (max-width: 320px) {
-    footer .links {
-        grid-template-columns: 1fr;
-    }
 }
