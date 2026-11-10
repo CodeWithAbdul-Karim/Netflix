@@ -96,8 +96,8 @@ footer .footer .btn button .down-arrow {
 }
 
 header nav .right a,
-header .hero form button,
-main .membership form button {
+header .hero .form a,
+main .membership .form a {
     font-weight: bold;
     color: white;
     padding: 9px 18px;
@@ -108,15 +108,15 @@ main .membership form button {
 }
 
 header nav .right a:hover,
-header .hero form button:hover,
-main .membership form button:hover {
+header .hero .form a:hover,
+main .membership .form a:hover {
     background-color: rgb(193, 17, 25);
 
 }
 
 header nav .right a:focus,
-header .hero form button:focus,
-main .membership form button:focus {
+header .hero .form a:focus,
+main .membership .form a:focus {
     background-color: rgb(153, 22, 29);
 }
 
@@ -149,7 +149,7 @@ header .hero .para {
     font-weight: lighter;
 }
 
-header .hero form {
+header .hero .form {
     width: 100%;
     display: flex;
     align-items: center;
@@ -157,8 +157,8 @@ header .hero form {
     gap: 12px;
 }
 
-header .hero form input,
-main .membership form input {
+header .hero .form input,
+main .membership .form input {
     font-size: 16px;
     background-color: transparent;
     border-bottom: none;
@@ -171,14 +171,14 @@ main .membership form input {
     color: white;
 }
 
-header .hero form input::placeholder {
+header .hero .form input::placeholder {
     color: rgba(231, 231, 231, 0.877);
     font-size: 18px;
 }
 
 
-header .hero form button,
-main .membership form button {
+header .hero .form a,
+main .membership .form a {
     border: none;
     font-size: 22px;
     display: inline-flex;
@@ -356,7 +356,7 @@ main .kidsSec {
 
 
 /* Watch Section  */
-main .membership form {
+main .membership .form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -418,7 +418,7 @@ main .membership p {
     margin-bottom: 1.2rem;
 }
 
-main .membership form {
+main .membership .form {
     gap: 12px;
 }
 
@@ -514,12 +514,12 @@ footer .footer .para {
         font-size: 18px;
     }
 
-    header .hero form input {
+    header .hero .form input {
         width: 55%;
         height: 40px;
     }
 
-    header .hero form button {
+    header .hero .form a {
         font-size: 28px;
     }
 }
@@ -551,11 +551,11 @@ footer .footer .para {
         font-size: 14px;
     }
 
-    header .hero form input {
+    header .hero .form input {
         width: 45%;
     }
 
-    header .hero form button {
+    header .hero .form a {
         font-size: 20px;
     }
 
@@ -609,16 +609,16 @@ footer .footer .para {
         font-size: 12px;
     }
 
-    header .hero form input {
+    header .hero .form input {
         width: 40%;
         height: 24px;
     }
 
-    header .hero form input::placeholder {
+    header .hero .form input::placeholder {
         font-size: 14px;
     }
 
-    header .hero form button {
+    header .hero .form a {
         font-size: 16px;
         padding: 12px 18px;
     }
@@ -664,17 +664,17 @@ footer .footer .para {
     }
 
 
-    header .hero form {
+    header .hero .form {
         flex-direction: column;
 
     }
 
-    header .hero form input {
+    header .hero .form input {
         width: 70%;
         height: 22px;
     }
 
-    header .hero form button {
+    header .hero .form a {
         padding: 12px 20px;
     }
 }
@@ -730,24 +730,24 @@ footer .footer .para {
         font-size: 16px;
     }
 
-    header .hero form input {
+    header .hero .form input {
         width: 70%;
         height: 20px;
     }
 
-    header .hero form input::placeholder {
+    header .hero .form input::placeholder {
         font-size: 12px;
     }
 
-    header .hero form button {
+    header .hero .form a {
         padding: 10px 20px;
     }
 
-    header .hero form button {
+    header .hero .form a {
         font-size: 14px;
     }
 
-    header .hero form button img {
+    header .hero .form a img {
         width: 20px;
     }
 
@@ -845,23 +845,23 @@ footer .footer .para {
     }
 
     /* MemberShip Sec */
-    main .membership form {
+    main .membership .form {
         justify-content: left;
         gap: 16px;
     }
 
-    main .membership form input {
+    main .membership .form input {
         font-size: 13px;
         width: 100%;
         height: 16px;
     }
 
-    main .membership form button {
+    main .membership .form a {
         font-size: 14px;
         padding: 11px 20px;
     }
 
-    main .membership form button img {
+    main .membership .form a img {
         width: 20px;
     }
 
@@ -941,11 +941,11 @@ footer .footer .para {
         font-size: 13px;
     }
 
-    header .hero form input {
+    header .hero .form input {
         height: 12px;
     }
 
-    header .hero form button {
+    header .hero .form a {
         font-size: 13px;
         padding: 8px 20px;
     }
