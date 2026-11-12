@@ -16,7 +16,7 @@ header .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../assets/images/hero.jpeg);
+    background-image: url(../assets/images//heroSec/hero.jpeg);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -216,7 +216,7 @@ main .trendingSec .movies {
     overflow-x: auto;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(10, 1fr);
     justify-items: end;
     gap: 2.5rem;
     padding-bottom: 12px;
@@ -259,26 +259,42 @@ main .trendingSec .movies .movie {
     width: 12rem;
     height: 17rem;
     cursor: pointer;
-    background-image: url(../assets/images/trendingSec/gajabRaat.webp);
+    background-image: url(../assets/images/trendingSec/lupin.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 main .trendingSec .movies .movie2 {
-    background-image: url(../assets/images/trendingSec/lupin.webp);
+    background-image: url(../assets/images/trendingSec/gajabRaat.webp);
 }
 
 main .trendingSec .movies .movie3 {
-    background-image: url(../assets/images/trendingSec/tgikShow.webp);
+    background-image: url(../assets/images/trendingSec/Dhamal4.webp);
 }
 
 main .trendingSec .movies .movie4 {
-    background-image: url(../assets/images/trendingSec/diwali.webp);
+    background-image: url(../assets/images/trendingSec/daayra.webp);
 }
 
 main .trendingSec .movies .movie5 {
     background-image: url(../assets/images/trendingSec/deadEndJob.webp);
+}
+
+main .trendingSec .movies .movie6 {
+    background-image: url(../assets/images/trendingSec/kapilshow.webp);
+}
+main .trendingSec .movies .movie7 {
+    background-image: url(../assets/images/trendingSec/sexLife.webp);
+}
+main .trendingSec .movies .movie8 {
+    background-image: url(../assets/images/trendingSec/moneyHeist.webp);
+}
+main .trendingSec .movies .movie9 {
+    background-image: url(../assets/images/trendingSec/akka.webp);
+}
+main .trendingSec .movies .movie10 {
+    background-image: url(../assets/images/trendingSec/jurassic.webp);
 }
 
 
